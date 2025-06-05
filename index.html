@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高级计算器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">计算器应用</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#calculator" class="nav-link active">计算器</a></li>
+            <li class="nav-item"><a href="#team" class="nav-link">团队信息</a></li>
+            <li class="nav-item"><a href="#news" class="nav-link">社团新闻</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="calculator" class="section active">
+            <div class="calculator">
+                <div class="display">
+                    <div class="previous-operand"></div>
+                    <div class="current-operand">0</div>
+                </div>
+                <div class="buttons">
+                    <button class="operator" data-action="clear">AC</button>
+                    <button class="operator" data-action="delete">DEL</button>
+                    <button class="operator" data-action="percent">%</button>
+                    <button class="operator" data-action="divide">÷</button>
+                    
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator" data-action="multiply">×</button>
+                    
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator" data-action="subtract">-</button>
+                    
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator" data-action="add">+</button>
+                    
+                    <button class="number">0</button>
+                    <button class="number">.</button>
+                    <button class="operator" data-action="sqrt">√</button>
+                    <button class="operator" data-action="equals">=</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <div class="team-container">
+                <h2>团队信息</h2>
+                <div class="team-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">团队成员</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">项目经验</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">技术奖项</span>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="https://via.placeholder.com/150" alt="成员头像">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>张三</h3>
+                        <p class="member-role">团队负责人</p>
+                        <p class="member-desc">负责项目整体规划与开发</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">项目管理</span>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="https://via.placeholder.com/150" alt="成员头像">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>李四</h3>
+                        <p class="member-role">前端开发</p>
+                        <p class="member-desc">负责界面设计与实现</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="https://via.placeholder.com/150" alt="成员头像">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>王五</h3>
+                        <p class="member-role">后端开发</p>
+                        <p class="member-desc">负责功能实现与优化</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section">
+            <div class="news-container">
+                <h2>社团新闻</h2>
+                <div class="news-list">
+                    <article class="news-item">
+                        <h3>2024年春季招新开始啦！</h3>
+                        <p class="news-date">2024-03-15</p>
+                        <p class="news-content">我们社团即将开始2024年春季招新，欢迎对编程感兴趣的同学加入我们！</p>
+                    </article>
+                    <article class="news-item">
+                        <h3>编程大赛获奖喜讯</h3>
+                        <p class="news-date">2024-03-10</p>
+                        <p class="news-content">恭喜我社成员在市级编程大赛中获得一等奖！</p>
+                    </article>
+                    <article class="news-item">
+                        <h3>技术分享会预告</h3>
+                        <p class="news-date">2024-03-05</p>
+                        <p class="news-content">本周六下午2点，我们将举办Web开发技术分享会，欢迎参加！</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
